@@ -27,10 +27,10 @@ class BearingTween extends Tween<double> {
   double get end => _interpolator.end;
 
   @override
-  set begin(double? value) => _interpolator.begin = value ?? 0;
+  set begin(double? value) => 0;
 
   @override
-  set end(double? value) => _interpolator.end = value ?? 0;
+  set end(double? value) => 0;
 
   void swap(double angle) => _interpolator.swap(angle);
 
