@@ -5,7 +5,7 @@ homepage: https://github.com/gauris26/flutter_animarker
 repository: https://github.com/gauris26/flutter_animarker
 publish_to: https://pub.dev
 environment:
-  sdk: '>=2.16.2 <3.0.0'
+  sdk: ">=2.16.2 <3.0.0"
 
 dependencies:
   flutter:
@@ -19,6 +19,6 @@ dev_dependencies:
     sdk: flutter
   pedantic: ^1.11.0
   import_sorter: ^4.4.2
-  dart_test_matchers: ^0.2.0
+  dart_test_matchers:
   google_maps_flutter: ^2.1.5
   benchmark_harness: ^2.0.0
