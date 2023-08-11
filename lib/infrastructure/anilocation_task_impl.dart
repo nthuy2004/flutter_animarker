@@ -55,9 +55,10 @@ class AnilocationTaskImpl extends IAnilocationTask
 
     //Bearing
     _bearingTween = BearingTween.from(wrapper.locationTween);
-    wrapper.locationCtrller.duration = Duration.zero;
-    _bearingAnimation = _bearingTween.curvedAnimate(
-        controller: wrapper.locationCtrller, curve: description.curve);
+    var a = wrapper.locationCtrller;
+    a.duration = Duration.zero;
+    _bearingAnimation =
+        _bearingTween.curvedAnimate(controller: a, curve: description.curve);
 
     wrapper.locationCtrller.addListener(_locationListener);
     wrapper.locationCtrller.addStatusListener(_statusListener);
