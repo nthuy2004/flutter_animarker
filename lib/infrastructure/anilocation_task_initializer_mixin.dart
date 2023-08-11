@@ -30,6 +30,20 @@ mixin AnilocationTaskInitializer on IAnilocationTask {
 
     return AnimationWrapper(locationTween, locationCtrller);
   }
+
+  AnimationWrapper bearingAnimationWrapper() {
+    final locationTween = LocationTween(
+      interpolator: LineLocationInterpolatorImpl(
+        begin: description.begin.copyWith(markerId: description.markerId),
+        end: description.end.copyWith(markerId: description.markerId),
+      ),
+    );
+
+    final locationCtrller =
+        AnimationController(vsync: description.vsync, duration: Duration.zero);
+
+    return AnimationWrapper(locationTween, locationCtrller);
+  }
 }
 
 class AnimationWrapper {
